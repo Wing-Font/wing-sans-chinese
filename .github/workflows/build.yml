@@ -1,0 +1,49 @@
+name: Build fonts
+
+# Release builds run from a tag. Fonts are not committed (fonts/ is gitignored);
+# they live only on the GitHub release, as single TTFs plus a zip that Google
+# Fonts can reference via METADATA.pb `archive_url`.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - if: startsWith(github.ref, 'refs/tags/')
+        name: Tag must match tools/families.py VERSION
+        run: test "$GITHUB_REF_NAME" = "v$(python3 -c 'import sys; sys.path.insert(0, "tools"); from families import VERSION; print(VERSION)')"
+      - run: pip install -r requirements.txt
+      - run: python3 build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fonts
+          path: fonts/ttf/*.ttf
+      - name: FontBakery (Google Fonts profile)
+        # Report only — FAILs don't block the build or release (see the script).
+        run: |
+          pip install "fontbakery[googlefonts]==1.1.0"
+          bash tools/fontbakery.sh | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fontbakery-report
+          path: fontbakery/
+      - if: startsWith(github.ref, 'refs/tags/')
+        # Fonts plus the ofl/<family>/ files METADATA.pb `files` points at
+        # (minus the TTF copies the FontBakery step left there).
+        run: zip -r "WingSans-${GITHUB_REF_NAME}.zip" fonts/ttf ofl -x 'ofl/*/*.ttf' 'ofl/*/METADATA.pb' 
+      - if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            fonts/ttf/*.ttf
+            WingSans-${{ github.ref_name }}.zip

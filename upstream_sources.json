@@ -1,0 +1,50 @@
+{
+  "srcfonts/NotoSansHK[wght].ttf": {
+    "url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notosanshk/NotoSansHK%5Bwght%5D.ttf",
+    "sha256": "76098ee78ec234cd4f8c950742b3f766fea2f8b43d5180d901048f4fc86c6849"
+  },
+  "srcfonts/NotoSansTC[wght].ttf": {
+    "url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf",
+    "sha256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f"
+  },
+  "srcfonts/NotoSans[wdth,wght].ttf": {
+    "url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d"
+  },
+  "mappings/cantonese/canto-lshk.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/mappings/cantonese/canto-lshk.csv",
+    "sha256": "492c4f574f9e450d9742d68622736bc3f6b15678e95e7d0a47ef97384756fadb"
+  },
+  "mappings/cantonese/lshk.diy-annotation.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/diy-mappings/cantonese/lshk.diy-annotation.csv",
+    "sha256": "52ea9c5bb25b60bdf819c1bd904ccbde518f1ad19d97b039cb5ec8a8a03f51b1"
+  },
+  "mappings/cantonese/canto-yale.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/mappings/cantonese/canto-yale.csv",
+    "sha256": "4c6500037ade0ee466a3ec8668a941fc788f5f4f7dd40f8b36b7c9e079c766e3"
+  },
+  "mappings/mandarin/mandarin-tw-toned.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/mappings/mandarin/mandarin-tw-toned.csv",
+    "sha256": "43293a212fd7f0b0b75a39734136e5c819a25a53ae9052ee59734f9c64eb7209"
+  },
+  "mappings/mandarin/pinyin.diy-annotation.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/diy-mappings/mandarin/pinyin.diy-annotation.csv",
+    "sha256": "02a86963e477525cb36833a72c342244167e070f4f77b82854a48e4d839afaae"
+  },
+  "mappings/taiwanese/taigi-tl-toned.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/mappings/taiwanese/taigi-tl-toned.csv",
+    "sha256": "1c943a9a60489a56db19c16a2ffcb711d2813caf1f20113439b2dc6cd0ba461f"
+  },
+  "mappings/taiwanese/sutian.diy-annotation.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/diy-mappings/taiwanese/sutian.diy-annotation.csv",
+    "sha256": "7e8d4988ef64e2f0c69ac0308aa19db1c88b8b29938be498ec99b59bd04feea2"
+  },
+  "srcfonts/NotoSansSC[wght].ttf": {
+    "url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+    "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+  },
+  "mappings/mandarin/mandarin-cn-toned-trimmed.csv": {
+    "url": "https://raw.githubusercontent.com/chunlaw/wing-font-generator/v1.1.0/python/mappings/mandarin/mandarin-cn-toned-trimmed.csv",
+    "sha256": "f50c13361e917d13a233cc738c695942351ac696e692029a8c278a8395d5e891"
+  }
+}

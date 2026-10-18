@@ -1,0 +1,7 @@
+tools/__pycache__/
+build/
+mappings/
+fonts/
+fontbakery/
+ofl/*/*.ttf
+GF-ONBOARDING.md

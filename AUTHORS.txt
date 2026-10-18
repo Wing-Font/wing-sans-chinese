@@ -1,0 +1,7 @@
+# This is the official list of project authors for copyright purposes.
+# The first name appears as "Principal design" on Google Fonts.
+# Name or Organization <email address>
+
+Wai-Chun Law
+Adobe (Noto Sans HK, Noto Sans TC, Noto Sans SC)
+Google (Noto Sans)

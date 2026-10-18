@@ -1,0 +1,4 @@
+# People who contributed to The Wing Sans Project, including those not
+# listed in AUTHORS.txt.
+
+Wai-Chun Law
