@@ -7,7 +7,8 @@
 <img src="sample.png" alt="Wing Sans Yue Yale: the same character read differently in two words">
 <p>
   Many characters have more than one reading. The font picks the right one from the surrounding word
-  through OpenType contextual alternates: 長 is cheung4 in 長短 (length) but jeung2 in 長大 (to grow up). When the automatic choice is wrong,
+  through substitutions in the OpenType <code>ccmp</code> feature, which applications apply by default:
+  長 is cheung4 in 長短 (length) but jeung2 in 長大 (to grow up). When the automatic choice is wrong,
   typing a digit after the character selects another reading.
 </p>
 <p>

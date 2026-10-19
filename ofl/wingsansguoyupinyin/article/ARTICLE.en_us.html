@@ -7,7 +7,8 @@
 <img src="sample.png" alt="Wing Sans Guoyu Pinyin: the same character read differently in two words">
 <p>
   Many characters have more than one reading. The font picks the right one from the surrounding word
-  through OpenType contextual alternates: 重 is zhòng in 重要 (important) but chóng in 重複 (to repeat). When the automatic choice is wrong,
+  through substitutions in the OpenType <code>ccmp</code> feature, which applications apply by default:
+  重 is zhòng in 重要 (important) but chóng in 重複 (to repeat). When the automatic choice is wrong,
   typing a digit after the character selects another reading.
 </p>
 <p>

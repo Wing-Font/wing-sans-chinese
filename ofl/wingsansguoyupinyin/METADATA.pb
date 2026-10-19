@@ -20,7 +20,7 @@ languages: "zh_Hant"
 primary_script: "Hant"
 source {
   repository_url: "https://github.com/Wing-Font/wing-sans-chinese"
-  archive_url: "https://github.com/Wing-Font/wing-sans-chinese/releases/download/v1.001/WingSans-v1.001.zip"
+  archive_url: "https://github.com/Wing-Font/wing-sans-chinese/releases/download/v1.002/WingSans-v1.002.zip"
   files {
     source_file: "fonts/ttf/WingSansGuoyuPinyin-Regular.ttf"
     dest_file: "WingSansGuoyuPinyin-Regular.ttf"

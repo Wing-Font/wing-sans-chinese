@@ -114,7 +114,8 @@ def article(f):
 <img src="sample.png" alt="{f['family']}: the same character read differently in two words">
 <p>
   Many characters have more than one reading. The font picks the right one from the surrounding word
-  through OpenType contextual alternates: {EXAMPLE[f['family']]}. When the automatic choice is wrong,
+  through substitutions in the OpenType <code>ccmp</code> feature, which applications apply by default:
+  {EXAMPLE[f['family']]}. When the automatic choice is wrong,
   typing a digit after the character selects another reading.
 </p>
 <p>

@@ -7,7 +7,8 @@
 <img src="sample.png" alt="Wing Sans Yue Jyutping: the same character read differently in two words">
 <p>
   Many characters have more than one reading. The font picks the right one from the surrounding word
-  through OpenType contextual alternates: 行 is hong4 in 銀行 (bank) but hang4 in 行人 (pedestrian). When the automatic choice is wrong,
+  through substitutions in the OpenType <code>ccmp</code> feature, which applications apply by default:
+  行 is hong4 in 銀行 (bank) but hang4 in 行人 (pedestrian). When the automatic choice is wrong,
   typing a digit after the character selects another reading.
 </p>
 <p>

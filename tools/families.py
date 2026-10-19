@@ -3,7 +3,7 @@ gen_metadata.py. Generator flags follow wing-font-generator's
 deploy-pages.yml NotoCond builds."""
 
 # Font version; release tags must be "v" + VERSION (checked in CI).
-VERSION = "1.001"
+VERSION = "1.002"
 
 HK = "srcfonts/NotoSansHK[wght].ttf"
 TC = "srcfonts/NotoSansTC[wght].ttf"
